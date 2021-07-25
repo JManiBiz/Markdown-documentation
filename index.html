@@ -205,6 +205,49 @@
             </tr>
           </table>
         </section>
+
+        <section class="sub-section" id="line-breaks">
+          <header>Line Breaks</header>
+          <article>
+            <p>
+              To create line breaks (&lt;<br />&gt;), end a line with two or
+              more spaces and then press enter.
+            </p>
+          </article>
+          <table>
+            <thead>
+              <tr>
+                <th>Markdown Syntax</th>
+                <th>HTML Syntax</th>
+                <th>Rendered Output</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code>
+                    This is the first line. <br />
+                    This is the second line.
+                  </code>
+                </td>
+                <td>
+                  <code>
+                    &lt;p&gt;This is the first line.&lt;br/&gt;
+                    <br />
+                    This is the second line.&lt;/p&gt;
+                  </code>
+                </td>
+                <td>
+                  <p>
+                    This is the first line.
+                    <br />
+                    This is the second line.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </section>
     </main>
   </body>
