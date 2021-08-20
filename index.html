@@ -44,7 +44,7 @@
         </article>
       </section>
 
-      <section class="main-section" id="Syntax">
+      <section class="main-section" id="syntax">
         <header>Syntax</header>
         <article>
           <p>
@@ -61,10 +61,9 @@
         </article>
       </section>
 
-      <section class="main-section" id="Basic-syntax">
-        <header>Basic Syntax</header>
-        <section class="sub-section" id="Headings">
-          <h1>Headings</h1>
+      <section class="main-section" id="basic-syntax">
+        <section class="sub-section" id="headings">
+          <header>Headings</header>
           <p>
             Pound signs (#) are added in front of a word or phrase to create a
             heading. The number of pound signs used should correspond to the
@@ -155,7 +154,7 @@
           </table>
         </section>
 
-        <section class="sub-section" id="Paragraphs">
+        <section class="sub-section" id="paragraphs">
           <header>Paragraphs</header>
           <p>
             To create paragraphs, use a blank line to separate one or more lines
@@ -244,9 +243,9 @@
         </section>
 
         <section class="sub-section" id="emphasis">
-          <h1>Emphasis</h1>
+          <header>Emphasis</header>
           <p>Bold and italics can be used to add emphasis to text</p>
-          <section class="sub-secton" id="bold">
+          <section id="bold">
             <h2>Bold</h2>
             <p>
               To bold text, two asterisks or underscores are added before and
@@ -288,6 +287,100 @@
                   </td>
                   <td>
                     <p>Hope<strong>is</strong>strong.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section id="italic">
+            <header>Italic</header>
+            <p>
+              To italicize text, one asterisk or underscore is added before and
+              after a word or phrase. To italicize the middle of a word for
+              emphasis, add one asterisk without spaces around the letters.
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Markdown Syntax</th>
+                  <th>HTML Syntax</th>
+                  <th>Rendered Output</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <code>
+                      Dog- *Canis lupus familiaris*
+                      <br />
+                      Dog- _Canis lupus familiaris_
+                    </code>
+                  </td>
+                  <td>
+                    <code>
+                      Dog- &lt;em&gt;Canis lupus familiaris&lt;/em&gt;
+                    </code>
+                  </td>
+                  <td>
+                    <p>Dog- <em>Canis lupus familiaris</em></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section id="bold-&-italic">
+            <header>Bold and Italic</header>
+            <p>
+              For extra emphasis, text can be bold and italicized at the same
+              time. To do this, three asterisks or underscores before and after
+              a word or phrase. To bold and italicize the middle of a word for
+              emphasis, add three asterisks without spaces around the letters.
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Markdown Syntax</th>
+                  <th>HTML Syntax</th>
+                  <th>Rendered Output</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <code>
+                      This is ***really very important.***
+                      <br />
+                      This is ___really very important.___
+                      <br />
+                      This is __*really very important.__*
+                      <br />
+                      This is **_really very important.**_
+                    </code>
+                  </td>
+                  <td>
+                    <code>
+                      This is &lt;strong&gt;&lt;em&gt;really very
+                      important.&lt;/em&gt;&lt;/strong&gt;
+                    </code>
+                  </td>
+                  <td>
+                    This is <strong><em>really very important.</em></strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <code> This is some really***very***important text. </code>
+                  </td>
+                  <td>
+                    <code>
+                      This is some
+                      really&lt;strong&gt;&lt;em&gt;very&lt;/em&gt;&lt;/strong&gt;important
+                      text.
+                    </code>
+                  </td>
+                  <td>
+                    This is some really<strong><em>very</em></strong
+                    >important text.
                   </td>
                 </tr>
               </tbody>
