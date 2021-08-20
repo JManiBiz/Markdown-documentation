@@ -65,14 +65,12 @@
         <header>Basic Syntax</header>
         <section class="sub-section" id="Headings">
           <h1>Headings</h1>
-          <article>
-            <p>
-              Pound signs (#) are added in front of a word or phrase to create a
-              heading. The number of pound signs used should correspond to the
-              heading level. For example, a heading level 4 (&lt;h4&gt;) is
-              created by using four pound signs (e.g., #### Header).
-            </p>
-          </article>
+          <p>
+            Pound signs (#) are added in front of a word or phrase to create a
+            heading. The number of pound signs used should correspond to the
+            heading level. For example, a heading level 4 (&lt;h4&gt;) is
+            created by using four pound signs (e.g., #### Header).
+          </p>
           <table>
             <thead>
               <tr>
@@ -159,12 +157,10 @@
 
         <section class="sub-section" id="Paragraphs">
           <header>Paragraphs</header>
-          <article>
-            <p>
-              To create paragraphs, use a blank line to separate one or more
-              lines of text.
-            </p>
-          </article>
+          <p>
+            To create paragraphs, use a blank line to separate one or more lines
+            of text.
+          </p>
           <table>
             <thead>
               <tr>
@@ -208,12 +204,10 @@
 
         <section class="sub-section" id="line-breaks">
           <header>Line Breaks</header>
-          <article>
-            <p>
-              To create line breaks (&lt;<br />&gt;), end a line with two or
-              more spaces and then press enter.
-            </p>
-          </article>
+          <p>
+            To create line breaks (&lt;br &gt;), end a line with two or more
+            spaces and then press enter.
+          </p>
           <table>
             <thead>
               <tr>
@@ -247,6 +241,58 @@
               </tr>
             </tbody>
           </table>
+        </section>
+
+        <section class="sub-section" id="emphasis">
+          <h1>Emphasis</h1>
+          <p>Bold and italics can be used to add emphasis to text</p>
+          <section class="sub-secton" id="bold">
+            <h2>Bold</h2>
+            <p>
+              To bold text, two asterisks or underscores are added before and
+              after a word or phrase. To bold the middle of a word for emphasis,
+              add two asterisks without spaces around the letters.
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Markdown Syntax</th>
+                  <th>HTML Syntax</th>
+                  <th>Rendered Output</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <code>
+                      This is **important.**
+                      <br />
+                      This is __important.__
+                    </code>
+                  </td>
+                  <td>
+                    <code>
+                      This is &lt;strong&gt;important.&lt;/strong&gt;
+                    </code>
+                  </td>
+                  <td>
+                    <p>This is <strong>important.</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <code> Hope**is**strong. </code>
+                  </td>
+                  <td>
+                    <code> Hope&lt;strong&gt;is&lt;/strong&gt;strong. </code>
+                  </td>
+                  <td>
+                    <p>Hope<strong>is</strong>strong.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </section>
       </section>
     </main>
