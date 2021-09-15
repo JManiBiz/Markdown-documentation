@@ -5,9 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="stylesheet.css" />
   </head>
-
   <body>
-    <nav id="navbar"></nav>
     <main id="main-doc">
       <section class="main-section" id="Introduction">
         <header>Introduction</header>
@@ -61,325 +59,260 @@
         </article>
       </section>
 
-      <section class="main-section" id="basic-syntax">
-        <section class="sub-section" id="headings">
-          <header>Headings</header>
-          <p>
-            Pound signs (#) are added in front of a word or phrase to create a
-            heading. The number of pound signs used should correspond to the
-            heading level. For example, a heading level 4 (&lt;h4&gt;) is
-            created by using four pound signs (e.g., #### Header).
-          </p>
-          <table>
-            <thead>
-              <tr>
-                <th>Markdown Syntax</th>
-                <th>HTML Syntax</th>
-                <th>Rendered Output</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <code># Heading 1</code>
-                </td>
-                <td>
-                  <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
-                </td>
-                <td>
-                  <h1>Heading 1</h1>
-                </td>
-              </tr>
+      <section class="sub-section" id="headings">
+        <header>Headings</header>
+        <p>
+          Pound signs (#) are added in front of a word or phrase to create a
+          heading. The number of pound signs used should correspond to the
+          heading level. For example, a heading level 4 (&lt;h4&gt;) is created
+          by using four pound signs (e.g., #### Header).
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Markdown Syntax</th>
+              <th>Rendered Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code># Heading 1</code>
+              </td>
+              <td>
+                <h1>Heading 1</h1>
+              </td>
+            </tr>
 
-              <tr>
-                <td>
-                  <code>## Heading 2</code>
-                </td>
-                <td>
-                  <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
-                </td>
-                <td>
-                  <h2>Heading 2</h2>
-                </td>
-              </tr>
+            <tr>
+              <td>
+                <code>## Heading 2</code>
+              </td>
+              <td>
+                <h2>Heading 2</h2>
+              </td>
+            </tr>
 
-              <tr>
-                <td>
-                  <code>### Heading 3</code>
-                </td>
-                <td>
-                  <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
-                </td>
-                <td>
-                  <h3>Heading 3</h3>
-                </td>
-              </tr>
+            <tr>
+              <td>
+                <code>### Heading 3</code>
+              </td>
+              <td>
+                <h3>Heading 3</h3>
+              </td>
+            </tr>
 
-              <tr>
-                <td>
-                  <code>#### Heading 4</code>
-                </td>
-                <td>
-                  <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
-                </td>
-                <td>
-                  <h4>Heading 4</h4>
-                </td>
-              </tr>
+            <tr>
+              <td>
+                <code>#### Heading 4</code>
+              </td>
+              <td>
+                <h4>Heading 4</h4>
+              </td>
+            </tr>
 
-              <tr>
-                <td>
-                  <code>##### Heading 5</code>
-                </td>
-                <td>
-                  <code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code>
-                </td>
-                <td>
-                  <h5>Heading 5</h5>
-                </td>
-              </tr>
+            <tr>
+              <td>
+                <code>##### Heading 5</code>
+              </td>
+              <td>
+                <h5>Heading 5</h5>
+              </td>
+            </tr>
 
-              <tr>
-                <td>
-                  <code>###### Heading 6</code>
-                </td>
-                <td>
-                  <code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code>
-                </td>
-                <td>
-                  <h6>Heading 6</h6>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+            <tr>
+              <td>
+                <code>###### Heading 6</code>
+              </td>
+              <td>
+                <h6>Heading 6</h6>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-        <section class="sub-section" id="paragraphs">
-          <header>Paragraphs</header>
-          <p>
-            To create paragraphs, use a blank line to separate one or more lines
-            of text.
-          </p>
-          <table>
-            <thead>
-              <tr>
-                <th>Markdown Syntax</th>
-                <th>HTML Syntax</th>
-                <th>Rendered Output</th>
-              </tr>
-            </thead>
+      <section class="sub-section" id="paragraphs">
+        <header>Paragraphs</header>
+        <p>
+          To create paragraphs, use a blank line to separate one or more lines
+          of text.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Markdown Syntax</th>
+              <th>Rendered Output</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>
+              <code>
+                This is writing in paragraphs in Markdown. There are two blank
+                lines between the paragraphs.
+                <br />
+                <br />
+                Now each paragaph starts on a new line after the blank lines.
+              </code>
+            </td>
+            <td>
+              <p>
+                This is writing in paragraphs in Markdown. There are two blank
+                lines between the paragraphs.
+              </p>
+              <p>
+                Now each paragaph starts on a new line after the blank lines.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="sub-section" id="line-breaks">
+        <header>Line Breaks</header>
+        <p>
+          To create line breaks (&lt;br &gt;), end a line with two or more
+          spaces and then press enter.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Markdown Syntax</th>
+              <th>Rendered Output</th>
+            </tr>
+          </thead>
+          <tbody>
             <tr>
               <td>
                 <code>
-                  This is writing in paragraphs in Markdown. There are two blank
-                  lines between the paragraphs.
-                  <br />
-                  <br />
-                  Now each paragaph starts on a new line after the blank lines.
-                </code>
-              </td>
-              <td>
-                <code>
-                  &lt;p&gt;This is writing in paragraphs in Markdown. There are
-                  two blank lines between the paragraphs.&lt;/p&gt;
-                  <br />
-                  <br />
-                  &lt;p&gt;Now each paragaph starts on a new line after the
-                  blank lines.&lt;/p&gt;
+                  This is the first line. <br />
+                  This is the second line.
                 </code>
               </td>
               <td>
                 <p>
-                  This is writing in paragraphs in Markdown. There are two blank
-                  lines between the paragraphs.
-                </p>
-                <p>
-                  Now each paragaph starts on a new line after the blank lines.
+                  This is the first line.
+                  <br />
+                  This is the second line.
                 </p>
               </td>
             </tr>
-          </table>
-        </section>
+          </tbody>
+        </table>
+      </section>
 
-        <section class="sub-section" id="line-breaks">
-          <header>Line Breaks</header>
-          <p>
-            To create line breaks (&lt;br &gt;), end a line with two or more
-            spaces and then press enter.
-          </p>
-          <table>
-            <thead>
-              <tr>
-                <th>Markdown Syntax</th>
-                <th>HTML Syntax</th>
-                <th>Rendered Output</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <code>
-                    This is the first line. <br />
-                    This is the second line.
-                  </code>
-                </td>
-                <td>
-                  <code>
-                    &lt;p&gt;This is the first line.&lt;br/&gt;
-                    <br />
-                    This is the second line.&lt;/p&gt;
-                  </code>
-                </td>
-                <td>
-                  <p>
-                    This is the first line.
-                    <br />
-                    This is the second line.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+      <section class="sub-section" id="emphasis">
+        <header>Emphasis</header>
+        <p>Bold and italics can be used to add emphasis to text</p>
+        <h2>Bold</h2>
+        <p>
+          To bold text, two asterisks or underscores are added before and after
+          a word or phrase. To bold the middle of a word for emphasis, add two
+          asterisks without spaces around the letters.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Markdown Syntax</th>
+              <th>Rendered Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code>
+                  This is **important.**
+                  <br />
+                  This is __important.__
+                </code>
+              </td>
+              <td>
+                <p>This is <strong>important.</strong></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code> Hope**is**strong. </code>
+              </td>
+              <td>
+                <p>Hope<strong>is</strong>strong.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <header>Italic</header>
+        <p>
+          To italicize text, one asterisk or underscore is added before and
+          after a word or phrase. To italicize the middle of a word for
+          emphasis, add one asterisk without spaces around the letters.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Markdown Syntax</th>
+              <th>Rendered Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code>
+                  Dog- *Canis lupus familiaris*
+                  <br />
+                  Dog- _Canis lupus familiaris_
+                </code>
+              </td>
+              <td>
+                <p>Dog- <em>Canis lupus familiaris</em></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <header>Bold and Italic</header>
+        <p>
+          For extra emphasis, text can be bold and italicized at the same time.
+          To do this, three asterisks or underscores before and after a word or
+          phrase. To bold and italicize the middle of a word for emphasis, add
+          three asterisks without spaces around the letters.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Markdown Syntax</th>
+              <th>Rendered Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code>
+                  This is ***really very important.***
+                  <br />
+                  This is ___really very important.___
+                  <br />
+                  This is __*really very important.__*
+                  <br />
+                  This is **_really very important.**_
+                </code>
+              </td>
+              <td>
+                This is <strong><em>really very important.</em></strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code> This is some really***very***important text. </code>
+              </td>
+              <td>
+                This is some really<strong><em>very</em></strong
+                >important text.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-        <section class="sub-section" id="emphasis">
-          <header>Emphasis</header>
-          <p>Bold and italics can be used to add emphasis to text</p>
-          <h2>Bold</h2>
-          <p>
-            To bold text, two asterisks or underscores are added before and
-            after a word or phrase. To bold the middle of a word for emphasis,
-            add two asterisks without spaces around the letters.
-          </p>
-          <table>
-            <thead>
-              <tr>
-                <th>Markdown Syntax</th>
-                <th>HTML Syntax</th>
-                <th>Rendered Output</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <code>
-                    This is **important.**
-                    <br />
-                    This is __important.__
-                  </code>
-                </td>
-                <td>
-                  <code> This is &lt;strong&gt;important.&lt;/strong&gt; </code>
-                </td>
-                <td>
-                  <p>This is <strong>important.</strong></p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code> Hope**is**strong. </code>
-                </td>
-                <td>
-                  <code> Hope&lt;strong&gt;is&lt;/strong&gt;strong. </code>
-                </td>
-                <td>
-                  <p>Hope<strong>is</strong>strong.</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <header>Italic</header>
-          <p>
-            To italicize text, one asterisk or underscore is added before and
-            after a word or phrase. To italicize the middle of a word for
-            emphasis, add one asterisk without spaces around the letters.
-          </p>
-          <table>
-            <thead>
-              <tr>
-                <th>Markdown Syntax</th>
-                <th>HTML Syntax</th>
-                <th>Rendered Output</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <code>
-                    Dog- *Canis lupus familiaris*
-                    <br />
-                    Dog- _Canis lupus familiaris_
-                  </code>
-                </td>
-                <td>
-                  <code>
-                    Dog- &lt;em&gt;Canis lupus familiaris&lt;/em&gt;
-                  </code>
-                </td>
-                <td>
-                  <p>Dog- <em>Canis lupus familiaris</em></p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <header>Bold and Italic</header>
-          <p>
-            For extra emphasis, text can be bold and italicized at the same
-            time. To do this, three asterisks or underscores before and after a
-            word or phrase. To bold and italicize the middle of a word for
-            emphasis, add three asterisks without spaces around the letters.
-          </p>
-          <table>
-            <thead>
-              <tr>
-                <th>Markdown Syntax</th>
-                <th>HTML Syntax</th>
-                <th>Rendered Output</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <code>
-                    This is ***really very important.***
-                    <br />
-                    This is ___really very important.___
-                    <br />
-                    This is __*really very important.__*
-                    <br />
-                    This is **_really very important.**_
-                  </code>
-                </td>
-                <td>
-                  <code>
-                    This is &lt;strong&gt;&lt;em&gt;really very
-                    important.&lt;/em&gt;&lt;/strong&gt;
-                  </code>
-                </td>
-                <td>
-                  This is <strong><em>really very important.</em></strong>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <code> This is some really***very***important text. </code>
-                </td>
-                <td>
-                  <code>
-                    This is some
-                    really&lt;strong&gt;&lt;em&gt;very&lt;/em&gt;&lt;/strong&gt;important
-                    text.
-                  </code>
-                </td>
-                <td>
-                  This is some really<strong><em>very</em></strong
-                  >important text.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <section class-"sub-section" id="blockquotes">
+      <section class="sub-section" id="blockquotes">
         <header>Blockquotes</header>
         <p>
           Blockquotes are used to quote text from another source. To create a
@@ -456,6 +389,67 @@
             </p>
           </blockquote>
         </blockquote>
+      </section>
+
+      <section class="sub-section" id="lists">
+        <header>Ordered Lists</header>
+        <p>
+          To create ordered lists, add numbers followed by periods before the
+          line items. The numbers don’t have to be in numerical order, but the
+          list should start with the number one.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Markdown Syntax</th>
+              <th>Rendered Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code>
+                  1. First item
+                  <br />
+                  2. Second item
+                  <br />
+                  3. Third item
+                  <br />
+                  4. Fourth item
+                </code>
+              </td>
+              <td>
+                <ol>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+                  <li>Fourth item</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>
+                  1. First item
+                  <br />
+                  2. Second item
+                  <br />
+                  3. Third item
+                  <br />
+                  4. Fourth item
+                </code>
+              </td>
+              <td>
+                <ol>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+                  <li>Fourth item</li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
   </body>
