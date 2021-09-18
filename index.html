@@ -64,8 +64,8 @@
         <p>
           Pound signs (#) are added in front of a word or phrase to create a
           heading. The number of pound signs used should correspond to the
-          heading level. For example, a heading level 4 (&lt;h4&gt;) is created
-          by using four pound signs (e.g., #### Header).
+          heading level. For example, a heading level 4 (&#60;h4&#62;) is
+          created by using four pound signs (e.g., #### Header).
         </p>
         <table>
           <thead>
@@ -171,7 +171,7 @@
       <section class="sub-section" id="line-breaks">
         <header>Line Breaks</header>
         <p>
-          To create line breaks (&lt;br &gt;), end a line with two or more
+          To create line breaks (&#60;br&#62;), end a line with two or more
           spaces and then press enter.
         </p>
         <table>
@@ -607,6 +607,94 @@
             </tr>
           </tbody>
         </table>
+        <p>
+          If an unordered list item needs to be started with a number followed
+          by a period, you can use a backslash to
+          <a
+            target="_blank"
+            href="https://www.markdownguide.org/basic-syntax/#escaping-characters"
+            >escape</a
+          >
+          the period.
+        </p>
+        <p>
+          Other elements can be added to a list while preserving the order of
+          the list. Check out the Markdown Guide to learn more about
+          <a
+            target="_blank"
+            href="https://www.markdownguide.org/basic-syntax/#adding-elements-in-lists"
+          >
+            adding elements to lists.</a
+          >
+        </p>
+      </section>
+
+      <section class="sub-section" id="code-blocks">
+        <header>Code</header>
+        <p>To display a word or phrase as code, enclose it in backticks (`).</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Markdown Syntax</th>
+              <th>Rendered Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code> Use the command 'mano' to run the program. </code>
+              </td>
+              <td>
+                <p>Use the command <code>mano</code> to run the program.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <header>Escaping Backticks</header>
+        <p>
+          If the word or phrase to be displayed as code has one or more
+          backticks, you can escape it by enclosing it in double backticks (``).
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Markdown Syntax</th>
+              <th>Rendered Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code> ''Adding 'code' to your file.'' </code>
+              </td>
+              <td>
+                <code> Adding 'code' to your file. </code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <header>Code Blocks</header>
+        <p>
+          To create a code block, indent every line of the block by four spaces
+          or one tab.
+        </p>
+        <pre>
+          <code>
+            &#60;html&#62;
+              &#60;head&#62;
+              &#60;/head&#62;
+            &#60;html&#62;
+          </code>
+        </pre>
+        <p>The rendered output would be:</p>
+        <pre>
+        <code>
+&#60;html&#62; 
+  &#60;head&#62; 
+  &#60;/head&#62; 
+&#60;html&#62;
+        </code>
+        </pre>
       </section>
     </main>
   </body>
