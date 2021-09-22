@@ -713,6 +713,100 @@
         <p>The rendered output would be:</p>
         <hr />
       </section>
+
+      <section class="sub-section" id="links">
+        <header>Links</header>
+        <p>
+          To create a link, surround the link text in brackets
+          <code>(e.g., [Wikipedia])</code>
+          and then follow it with the URL in parentheses
+          <code>( e.g., (https://www.wikipedia.org))</code>
+        </p>
+        <code> Learn more on [Wikipedia](https://www.wikipedia.org). </code>
+        <p>The rendered output would be:</p>
+        <p>
+          Learn more on
+          <a target="_blank" href="https://www.wikipedia.org">Wikipedia </a>
+        </p>
+        <header>Adding Titles</header>
+        <p>
+          A title can be added for a link. This will appear as a tooltip when
+          the user hovers over the link. To add a title, surround it in
+          parentheses after the URL.
+        </p>
+        <code>
+          Learn more on [Wikipedia](https://www.wikipedia.org "The free online
+          encyclopedia")
+        </code>
+        <p>The rendered output would be:</p>
+        <p>
+          Learn more on
+          <a
+            target="_blank"
+            href="https://www.wikipedia.org"
+            title="The free online encyclopedia"
+            >Wikipedia
+          </a>
+        </p>
+        <header>Emails and URLs</header>
+        <p>
+          To quickly turn a URL or email address into a link, enclose it in
+          angle brackets.
+        </p>
+        <pre>
+          <code>
+            &#60;https://www.google.com&#62;
+            &#60;test@email.com&#62;
+          </code>
+        </pre>
+        <p>The rendered output would be:</p>
+        <p>
+          <a href="https://www.google.com">https://www.google.com</a>
+          <br />
+          <a href="test@email.com">test@email.com</a>
+        </p>
+        <header>Formatting Links</header>
+        <p>
+          Links can be emphasized by adding asterisks before and after the
+          brackets and parentheses. To show links as code, add backticks in the
+          brackets.
+        </p>
+        <pre>
+          <code>
+            I love **[music](https://open.spotify.com).**
+            This is *[very useful](https://en.wikipedia.org/wiki/Markdown).*
+            See the section on ['syntax examples'](https://en.wikipedia.org/wiki/Markdown#Example)
+          </code>
+        </pre>
+        <p>The rendered output would be:</p>
+        <p>
+          I love
+          <strong>
+            <a href="https://open.spotify.com">music.</a>
+          </strong>
+          <br />
+          This is
+          <em>
+            <a href="https://en.wikipedia.org/wiki/Markdown">very useful.</a>
+          </em>
+          <br />
+          See the section on
+          <code>
+            <a href="https://en.wikipedia.org/wiki/Markdown#Example"
+              >syntax examples.</a
+            >
+          </code>
+        </p>
+        <p>
+          Reference-style links are special links that make URLs easier to
+          display and read in Markdown. Markdown Guide speaks more on
+          <a
+            target="_blank"
+            href="https://www.markdownguide.org/basic-syntax/#reference-style-links"
+            >reference-style links.
+          </a>
+        </p>
+      </section>
     </main>
   </body>
 </html>
