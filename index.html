@@ -168,7 +168,7 @@
         </table>
       </section>
 
-      <section class="sub-section" id="line-breaks">
+      <section class="sub-section" id="line_breaks">
         <header>Line Breaks</header>
         <p>
           To create line breaks (&#60;br&#62;), end a line with two or more
@@ -240,7 +240,7 @@
             </tr>
           </tbody>
         </table>
-        <header>Italic</header>
+        <h2>Italic</h2>
         <p>
           To italicize text, one asterisk or underscore is added before and
           after a word or phrase. To italicize the middle of a word for
@@ -268,7 +268,7 @@
             </tr>
           </tbody>
         </table>
-        <header>Bold and Italic</header>
+        <h2>Bold and Italic</h2>
         <p>
           For extra emphasis, text can be bold and italicized at the same time.
           To do this, three asterisks or underscores before and after a word or
@@ -327,7 +327,7 @@
           >You could leave life right now. Let that determine what you do and
           say and think. - Marcus Aurelius
         </blockqoute>
-        <header>Blockquotes with Multiple Paragraphs</header>
+        <h2>Blockquotes with Multiple Paragraphs</h2>
         <p>
           To create blockquotes with multiple paragraphs, add a > on the blank
           lines between the paragraphs.
@@ -357,7 +357,7 @@
             ones.
           </p>
         </blockquote>
-        <header>Nested Blockquotes</header>
+        <h2>Nested Blockquotes</h2>
         <p>
           Blockquotes can be nested. Add a >> in front of the paragraph to be
           nested.
@@ -392,7 +392,9 @@
       </section>
 
       <section class="sub-section" id="lists">
-        <header>Ordered Lists</header>
+        <header>Lists</header>
+        <p>Lists can either be ordered or unordered.</p>
+        <h2>Ordered Lists</h2>
         <p>
           To create ordered lists, add numbers followed by periods before the
           line items. The numbers don’t have to be in numerical order, but the
@@ -500,7 +502,7 @@
             </tr>
           </tbody>
         </table>
-        <header>Unordered Lists</header>
+        <h2>Unordered Lists</h2>
         <p>
           To create unordered lists, add dashes, asterisks or plus signs in
           front line items. Indent one or more items to create a nested list.
@@ -629,7 +631,7 @@
         </p>
       </section>
 
-      <section class="sub-section" id="code-blocks">
+      <section class="sub-section" id="code">
         <header>Code</header>
         <p>To display a word or phrase as code, enclose it in backticks (`).</p>
         <table>
@@ -650,7 +652,7 @@
             </tr>
           </tbody>
         </table>
-        <header>Escaping Backticks</header>
+        <h2>Escaping Backticks</h2>
         <p>
           If the word or phrase to be displayed as code has one or more
           backticks, you can escape it by enclosing it in double backticks (``).
@@ -697,7 +699,7 @@
         </pre>
       </section>
 
-      <section class="sub-section" id="horizontal-rules">
+      <section class="sub-section" id="horizontal_rules">
         <header>Horizontal Rules</header>
         <p>
           To create a horizontal rule, use three or more asterisks, dashes, or
@@ -728,7 +730,7 @@
           Learn more on
           <a target="_blank" href="https://www.wikipedia.org">Wikipedia </a>
         </p>
-        <header>Adding Titles</header>
+        <h2>Adding Titles</h2>
         <p>
           A title can be added for a link. This will appear as a tooltip when
           the user hovers over the link. To add a title, surround it in
@@ -765,7 +767,7 @@
           <br />
           <a href="test@email.com">test@email.com</a>
         </p>
-        <header>Formatting Links</header>
+        <h2>Formatting Links</h2>
         <p>
           Links can be emphasized by adding asterisks before and after the
           brackets and parentheses. To show links as code, add backticks in the
@@ -826,7 +828,7 @@
           alt="A bluebird on a music note."
           title="Bluebird on a music note"
         />
-        <header>Linking Images</header>
+        <h2>Linking Images</h2>
         <p>
           To add a link to an image, place the Markdown for the image in
           brackets and then add the link in parentheses.
@@ -842,6 +844,67 @@
             alt="A bluebird on a music note"
           />
         </a>
+      </section>
+
+      <section class="main-section" id="good_practices">
+        <header>Good Practices When Writing in Markdown</header>
+        <p>
+          Here are some of the best practices to maintain when using Markdown:
+        </p>
+        <ul>
+          <li>
+            Headings: Always put a space between the pound sign and the heading
+            name and place blank lines before and after a heading.
+          </li>
+          <li>Paragraphs: Don't indent paragraphs unless it is in a list.</li>
+          <li>
+            Line Breaks: Using two or more spaces (called "trailing whitespace")
+            for line breaks in Markdown is controversial. It is difficult to see
+            trailing whitespace in an editor causing persons to put two spaces
+            at the end of every sentence. Therefore, if your editor allows it,
+            use the HTML &#60;br&#62; tag.
+          </li>
+          <li>
+            Bold/Italic: Refrain from using underscores in the middle of a word.
+            It is best to use asterisks instead.
+          </li>
+          <li>
+            Ordered Lists: Use periods as a delimiter only and not parenthesis.
+          </li>
+          <li>
+            Unordered Lists: Do not mix delimiters in the same list- chose one
+            and stick with it.
+          </li>
+          <li>
+            Horizontal Rule: Put blank lines before and after horizontal rules.
+          </li>
+          <li>Links: Encode any spaces in a URL with %20 for compatibility.</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="extended_syntax">
+        <p>
+          Feel confident in your Markdown Syntax skills? Then you should check
+          out this
+          <a href="https://www.markdownguide.org/extended-syntax/"
+            >extended syntax.
+          </a>
+        </p>
+      </section>
+
+      <section class="main-section" id="references">
+        <header>References</header>
+        <article>
+          <p>All information in this page was taken from:</p>
+          <ul>
+            <li>
+              <a href="https://www.markdownguide.org">Markdown Guide</a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia</a>
+            </li>
+          </ul>
+        </article>
       </section>
     </main>
   </body>
